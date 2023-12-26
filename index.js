@@ -15,7 +15,7 @@ res.send("سلام أنا شاب بوت.");
 
 app.get("/webhook", function(req,res){
 
-  const PAGE_VERIFY_TOKEN ="Alaebaraachat@010119892023";
+  const PAGE_VERIFY_TOKEN ="EAAPRjb5RBPEBO664tq94xvSacLOOxU81NI2xT6gIzZB0JulXvS8fa2YE1L9ZAEp8PGHUKtm6BdQ8EgYMDc40vKjw0vZBPEymDA7pHGm0iZCbVZC7lky0FImjBbWkrkmupPxW9fEZA8J287sm6iSOYIT4UtpZBkMY8BodQgScAQ9n9xsxjLSucMCqAhJMIbRQnG4";
   let token = req.query["hub.verify_token"];
   let challenge = req.query["hub.challenge"];
 
