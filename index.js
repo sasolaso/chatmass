@@ -1,11 +1,11 @@
 const  express = require("express");
 const  bodyParser = require("body-parser");
 const  request = require("request");
-
+const PAGE_VERIFY_TOKEN = "barachatbot123";
 const app = express();
 
 
-app.listen(process.env.PORT || 3000)
+app.set(process.env.PORT || 3000)
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
@@ -16,7 +16,7 @@ res.send("سلام أنا شاب بوت.");
 
 app.get("/webhook", function(req,res){
 
-  const PAGE_VERIFY_TOKEN = "barachatbot123";
+  
   let token = req.query["hub.verify_token"];
   let challenge = req.query["hub.challenge"];
 
