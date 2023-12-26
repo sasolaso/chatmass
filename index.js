@@ -1,7 +1,7 @@
 const  express = require("express");
 const  bodyParser = require("body-parser");
 const  request = require("request");
-const  PAGE_VERIFY_TOKEN = require("token");
+
 const app = express();
 
 app.set("port", (process.env.PORT || 8000));
