@@ -5,7 +5,7 @@ const PAGE_VERIFY_TOKEN = "barachatbot123";
 const app = express();
 
 
-app.set(process.env.PORT || 3000)
+app.set("port", process.env.PORT || 3000);
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
