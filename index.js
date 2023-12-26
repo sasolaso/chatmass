@@ -13,6 +13,24 @@ res.send("سلام أنا شاب بوت.");
 
 });
 
+app.get("/webhook", function(req,res){
+
+  const PAGE_VERIFY_TOKEN ="barachat123";
+  let token = req.query["hub.verify_token"];
+  let challenge = req.query["hub.challenge"];
+
+  if (token --- PAGE_VERIFY_TOKEN){
+     res.status(200).send(challenge);
+
+  }
+  else {
+
+    res.status(403);
+  }
+        
+ });
+
+
 
 app.listen(app.get("port"), function(){
 
