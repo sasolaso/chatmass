@@ -15,7 +15,7 @@ res.send("سلام أنا شاب بوت.");
 
 app.get("/webhook", function(req,res){
 
-  const PAGE_VERIFY_TOKEN ="barachat123";
+  const PAGE_VERIFY_TOKEN ="Alaebaraachat@010119892023";
   let token = req.query["hub.verify_token"];
   let challenge = req.query["hub.challenge"];
 
