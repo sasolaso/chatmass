@@ -25,7 +25,7 @@ app.get("/webhook", function(req,res){
 
     } else {
 
-    res.sendStatus(403);
+    res.status(403);
   }
      
 });
